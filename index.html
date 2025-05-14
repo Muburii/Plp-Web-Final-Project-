@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuff Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Zuff Tech</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-nav-toggle" aria-controls="nav-links" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <div class="hamburger"></div>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Solving Problems Through Tech</h2>
+                    <p>We create stunning, scalable, responsive systems with modern technologies for businesses of any size.</p>
+                    <a href="contact.html" class="btn btn-primary">Get in touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="64" height="64" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3>System Development</h3>
+                        <p>We develop scalable, secure, and reliable software systems tailored to your business needs—from enterprise solutions to cloud-based applications.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="64" height="64" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                                <line x1="15" y1="12" x2="3" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>Data Management & Analytics</h3>
+                        <p>We help businesses harness the power of data through secure storage, real-time processing, and actionable analytics dashboards for informed decision-making.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="64" height="64" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Mobile & Cross-Platform Apps</h3>
+                        <p> We build responsive and native mobile applications that deliver seamless user experiences on Android, iOS, and beyond.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+    <div class="container">
+        <h2 class="section-title">Our Projects</h2>
+        <div class="slideshow-container">
+            <div class="slide fade active">
+                <img src="/api/placeholder/800/450" alt="Project 1">
+                <div class="slide-caption">
+                    <h3>Corporate Branding Website</h3>
+                    <p>Modern website with content management system for a financial services firm.</p>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="/api/placeholder/800/450" alt="Project 2">
+                <div class="slide-caption">
+                    <h3>Restaurant Booking System</h3>
+                    <p>Custom-built reservation system with online ordering capabilities.</p>
+                </div>
+            </div>
+
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+</section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="quote">"Zuff Tech delivered a system that exceeded our expectations. Their attention to detail and responsive design has significantly improved our online presence."</div>
+                        <div class="client">
+                            <p class="client-name">Sarah Johnson</p>
+                            <p class="client-company">Acme Industries</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote">"Working with the Zuff Tech team was a pleasure from start to finish. They understood our vision and executed it perfectly."</div>
+                        <div class="client">
+                            <p class="client-name">Michael Chen</p>
+                            <p class="client-company">Global Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Zuff Tech</h2>
+                    <p>Building better digital experiences</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p>Email: info@horizon.example</p>
+                        <p>Phone: (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Horizon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
